@@ -9,12 +9,23 @@
 
 {% block content %}
 
+   <div class="container">
+      <div class="row">
+
 {% for produit in produits %}
-  <div class="card">
-    <div class="card-body"><p>{{produit}}</p>
-</div>
-  </div>
+  
+ 
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body px-4 pt-4"><p>{{produit}}</p>
+            </div>
+          </div>
+        </div>
+
 
 {% endfor %}
 
+      </div>
+    </div>
+ 
 {% endblock%}
